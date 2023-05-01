@@ -7,7 +7,7 @@ const Home = () => {
     <div className="flex justify-center items-center text-left bg-gradient-to-l from-[#cefecd] to-[#bcefbb] p-5 md:p-20">
       <div className="mx-5">
         <img
-          className="px-2 w-[35vh] hover:rotate-2 duration-500"
+          className="px-2 w-[35vh] hover:-rotate-2 duration-500"
           src={img_01}
           alt="illustration of a goal"
         />

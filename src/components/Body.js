@@ -21,26 +21,28 @@ const Body = () => {
           Výtvory našich šikovných zaměstnanců
         </h1>
       </div>
-      <div
-        id="imageitems"
-        className="flex justify-center w-[20rem]"
-        style={imageContainerStyle}
-      >
-        <img
-          className="m-5 hover:scale-125 duration-300 border-black border-4"
-          src={img_01}
-          onLoad={handleImageLoad}
-        />
-        <img
-          className="m-5 hover:scale-125 duration-300 border-black border-4"
-          src={img_02}
-          onLoad={handleImageLoad}
-        />
-        <img
-          className="m-5 hover:scale-125 duration-300 border-black border-4"
-          src={img_03}
-          onLoad={handleImageLoad}
-        />
+      <div className="max-w-[1140px] mt-5 m-auto w-full md:flex r">
+        <div className="relative p-4">
+          <img
+            className="w-full h-full object-cover relative border-4 border-[#9cd39c] shadow-lg hover:scale-105 duration-75"
+            src={img_01}
+            onLoad={handleImageLoad}
+          />
+        </div>
+        <div className="relative p-4">
+          <img
+            className="w-full h-full object-cover relative border-4 border-[#9cd39c] shadow-lg hover:scale-105 duration-75"
+            src={img_02}
+            onLoad={handleImageLoad}
+          />
+        </div>
+        <div className="relative p-4">
+          <img
+            className="w-full h-full object-cover relative border-4 border-[#9cd39c] shadow-lg hover:scale-105 duration-100"
+            src={img_03}
+            onLoad={handleImageLoad}
+          />
+        </div>
       </div>
       {!imagesLoaded && (
         <div className="my-10 text-3xl">
